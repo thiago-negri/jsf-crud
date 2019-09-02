@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- File: edit.xhtml -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+<h:head></h:head>
+<h:body>
+    <h:form>
+        <p:panel header="Update Book">
+            <p:panelGrid columns="1" layout="grid">
+                <p:outputLabel for="book-title" value="Enter new book title"/>
+                <p:inputText id="book-title" value='#{bookBean.bookTitle}'/>
+                <p:commandButton value="Update" action="#{bookBean.update}" ajax="false"/>
+            </p:panelGrid>
+            <input type="hidden" name="bookId" value='#{param.bookId}'/>
+            <input type="hidden" value="${_csrf.token}" name="${_csrf.parameterName}"/>
+        </p:panel>
+    </h:form>
+</h:body>
+</html>
