@@ -31,7 +31,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <version.openjpa>2.3.0</version.openjpa>
         <spring-security.version>5.1.6.RELEASE</spring-security.version>
-        <spring.version>5.1.6.RELEASE</spring.version>
+        <spring.version>5.1.18.RELEASE</spring.version>
     </properties>
 
     <dependencyManagement>
